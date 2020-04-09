@@ -1,7 +1,7 @@
 El curso se organiza en tres secciones, de menor a mayor nivel de dificultad:
 
- * **nivel básico**, cuyo contenido se encuentra en la carpeta `NivelBasico`. Aquí  se introducen algunos tipos de datos básicos como cadenas, números y booleanos. Se realizan operaciones con ellos y se introducen las condiciones.
- * **nivel intermedio**, `NivelMedio`. Aquí se introducen los `arrays`, como herramienta
+ * **nivel básico**, cuyo contenido se encuentra en la carpeta `Nivel_Basico`. Aquí  se introducen algunos tipos de datos básicos como cadenas, números y booleanos. Se realizan operaciones con ellos y se introducen las condiciones.
+ * **nivel intermedio**, `Nivel_Medio`. Aquí se introducen los `arrays`, como herramienta
    para trabajar con múltiples variables al mismo tiempo, las `funciones` para
    encapsular el código desarrollado y facilitar su reutilización; y los `objectos`
    para agrupar aquellas variablas que guarden una relación entre sí.
