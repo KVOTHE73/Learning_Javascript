@@ -16,28 +16,24 @@ let max = numbers[0];
 let i
 
 for (i=0; i<numbers.length; i++) {
-    if (i < min ) {
-        min = i;
+    if (numbers[i] < min ) {
+        min = numbers[i];
     }
-    if (i > max) {
-        max = i
+    if (numbers[i] > max) {
+        max = numbers[i];
     }
 }
 console.log(min, max);
 
-console.log(numbers);
-
-
-
-
-
-/** 
 let number
 
 for (number of numbers) {
-    if (numbers < numbers+1 && numbers<numbers-1) {
-        output.push(number);
+    if (numbers < min) {
+        min = numbers;
+    }
+    if (numbers > max) {
+        max = numbers;
     }
 }
-console.log(output);
-*/
+console.log(min, max);
+
