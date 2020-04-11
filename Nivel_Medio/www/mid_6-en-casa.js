@@ -13,7 +13,9 @@ let numbers = [1,2,4,5,6,7,8,9,13,14];
 let min = numbers[0];
 let max = numbers[0];
 
-let i
+//Opcion 1
+
+let i = [];
 
 for (i=0; i<numbers.length; i++) {
     if (numbers[i] < min ) {
@@ -25,7 +27,9 @@ for (i=0; i<numbers.length; i++) {
 }
 console.log(min, max);
 
-let number
+//Opcion 2
+
+let number = [];
 
 for (number of numbers) {
     if (numbers < min) {
