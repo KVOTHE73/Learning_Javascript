@@ -30,8 +30,22 @@
         - crear un nuevo array con ambos subarrays, y aplicarle la función map 
 */
 
+"use strict";
 
-N=2
-values = [1, 2, 3, 4, 5, 6, 7];
+let N=4;
+let values = [1, 2, 3, 4, 5, 6, 7];
 
-// notad cómo cambia el formato de `output` entre los dos `console.log`
+let firstArray = values.slice(values.length-N, values.length);
+
+console.log(firstArray);
+
+let secondArray = values.slice(0, values.length-N);
+
+console.log(secondArray);
+
+let newValues = [firstArray, secondArray].flat();
+
+console.log(newValues);
+
+
+
