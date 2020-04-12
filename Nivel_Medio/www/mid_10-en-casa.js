@@ -9,8 +9,18 @@
  * 
  */
 
- values = [1,2,3,4];
- output = [];
- accumulator = 0;
+"use strict";
 
- 
+let values = [1,2,3,4];
+let output = [];
+let accumulator = 0;
+let i = [];
+
+for (i=0; i<values.length; i++) {
+    accumulator = accumulator + values[i];
+    output.push(accumulator);
+    
+    
+}
+
+console.log(output);

@@ -38,7 +38,7 @@ output = [];
 fistTargetSubarray = values.slice(values.length - N, values.length);
 secondTargetSubarray = values.slice(0, values.length - N);
 
-output = [fistTargetSubarray, secondTargetSubarray]
+output = [fistTargetSubarray, secondTargetSubarray].flat();
 
 console.log(output);
 
