@@ -11,19 +11,15 @@
  * Nota cómo se trata de un desplazamiento circular,
  * donde el último elemento pasa a ser el primero
  */
-values = [1, 2, 3, 4];
-output = [];
 
+"use strict";
 
-// el valor 4 (que está en la posición 3), pasa
-// a ser el primero del array, así que lo metemos
-output.push(values[values.length - 1]);
+let values = [1, 2, 3, 4];
+let output = [];
 
+output.push(values[values.length-1]);
 
-// recorremos los valores que aparecen en secuencia, es decir,
-// del 1 a 3, e introducimos cada uno de estos valores en 
-// secuencia en el nuevo array
-for (i=0; i<values.length-1; i++) {
+for (let i=0; i<values.length-1; i++) {
     output.push(values[i]);
 }
 
