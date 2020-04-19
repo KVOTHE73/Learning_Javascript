@@ -18,5 +18,19 @@
  */
 
 const values = [4,5,1,6]
-let result = []
+let result = [];
+let output = [];
 
+let i = [];
+
+for (i=0; i<values.length-1; i++) {
+    if (values[i] < values[i+1]) {
+        result = true;
+
+    }
+    else result = false
+
+    output.push(result);
+}
+
+console.log(output);
