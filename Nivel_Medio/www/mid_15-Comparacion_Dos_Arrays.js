@@ -19,10 +19,50 @@
  *    maxSpeeds = [120, 120, 80, 120]
  * 
  *    El array resultante será
- *              [true, true, false, false] 
+ *              [false, false, true, true] 
+ *****MODIFICACION AL EJERCICIO ORIGINAL, CAMBIAMOS TRUE POR "MULTA" Y FALSE POR "NO MULTA"*****
  * 
  *    La penalización será: ((90-80) + (130-120))*2/10 = 4
  * 
  */
 
+
+"use strict";
+
+const speeds = [100, 105, 90, 130];
+const maxSpeeds = [120, 120, 80, 120];
+
+//comparamos la velocidad con la velocidad maxima y sera true si es mas (multa) y false si es menos (no multa)
+
+let speed = [];
+
+let infraction = [];
+
+for (let i=0; i<speeds.length; i++) {
+    if (speeds[i] <= maxSpeeds[i]) {
+        speed = "No Multa" 
+                           }
+    else speed = "Multa";
+
+    infraction.push(speed);
+}
+
+console.log(`Multas por tramo: ${infraction}`);
+
+//inicializamos en 0 la penalizacion y la incrementamos cada vez que hay un exceso (diferencia entre velocidad permitida y real)
+
+let penalization = 0;
+
+
+for (let i=0; i<speeds.length; i++) {
+    if (speeds[i] >= maxSpeeds[i]) {
+    penalization += (speeds[i] - maxSpeeds[i]);
+            
+    }
+       
+        }     
+
+let points = (penalization * 2) / 10;
+
+console.log(`La penalización será de ${points} puntos`);
 
