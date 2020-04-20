@@ -17,7 +17,33 @@
  *     - Investiga que pasaría si hubiera declarada una variable llamada `grade` fuera de la función
  * 
  */
+
+"use dtrict";
+
 const grade1 = 9.1;
 const grade2 = 5;
 const grade3 = 6;
+
+function averageGrade(grade) {
+    if (grade < 5) {
+        return "SUSPENSO";
+    }
+    if (grade >= 5 && grade <6) {
+        return "SUFICIENTE";
+    }
+    if (grade >= 6 && grade <7) {
+        return "BIEN";
+    }
+    if (grade >= 7 && grade <9) {
+        return "NOTABLE";
+    }
+    if (grade >= 9) {
+        return "SOBRESALIENTE";
+    }
+}
+
+
+console.log(`La nota es: ${averageGrade(grade1)}`);
+console.log(`La nota es: ${averageGrade(grade2)}`);
+console.log(`La nota es: ${averageGrade(grade3)}`);
 

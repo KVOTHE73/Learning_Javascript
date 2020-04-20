@@ -53,7 +53,7 @@ if (notas>5) {
    
 }
 
-// console.log(mensaje); ==> Identifier 'mensaje' has already been declared, igual que en el anterior, mensaje esta declarado dos veces.
+// console.log(mensaje); ==> Identifier 'mensaje' has already been declared, igual que en el anterior, mensajes esta declarado dos veces.
 
 
 
