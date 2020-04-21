@@ -30,3 +30,45 @@
  * 
  */
 population = [0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0];
+
+function infect(currentInfected) {
+    let nextDay = [...currentInfected];
+
+    for (let i=0; i<currentInfected.length; i++) {
+
+        if (currentInfected[i] === 1) {
+            if (i>0) {
+                nextDay[i - 1] = 1; // contagiar al anterior
+            }
+
+            if (i !== currentInfected.length-1) {
+                nextDay[i + 1] = 1; // contagiar al siguiente
+            }
+        }
+    }
+
+    return nextDay;
+}
+
+//const population = [0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0];
+
+const population = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+let previousDay = population;
+let countDays = 0;
+
+if (previousDay.indexOf(1) === -1) {
+    console.log(`La población nunca se infectará`);
+} else {
+    while (previousDay.indexOf(0) !== -1) {
+        previousDay = infect(previousDay);
+        countDays++;
+    }
+
+    console.log(`Toda la población se infecta en ${countDays} días`);
+}
+
+// 1) Poner el código principal en una función que devuelva el número de días
+// y -1 si no hay infectados
+// 2) Pensar cómo rehacer la función `infect`
+

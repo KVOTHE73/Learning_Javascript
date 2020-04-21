@@ -18,7 +18,7 @@
  * 
  */
 
-"use dtrict";
+"use strict";
 
 const grade1 = 9.1;
 const grade2 = 5;
