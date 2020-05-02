@@ -26,3 +26,25 @@
  *   [-1,-1,0,2,-1] -> devuelve [2 ,3]
  * 
  */
+
+function getSequenceEdges(values) {
+    let start; 
+    let end;
+
+    return [start, end]
+ }
+
+
+ let edges = getSequenceEdges([1,1,1]);
+ // edges es una array de dos posiciones
+ // edges[0]
+ // edges[1]
+
+
+ let [start, end] = getSequenceEdges([1,1,1]);
+ // asigno directamente las variables start y end
+
+ nombre = "juan Rodriguez Cuervo"
+ nombre2 = nombre.split(" ");
+ console.log(nombre2);
+ 

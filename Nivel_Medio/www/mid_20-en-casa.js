@@ -26,3 +26,16 @@
  *   [-1,-1,0,2,-1] -> devuelve [2 ,3]
  * 
  */
+
+ "use strict";
+const values = [1,2,3,-4,5,6];
+let newValues = [];
+
+ for (let i=0; i<values.length; i++) {
+     if (values[i] >= 0) {
+         newValues.push(values[i]);
+     }
+ }
+
+ console.log(newValues);
+ 

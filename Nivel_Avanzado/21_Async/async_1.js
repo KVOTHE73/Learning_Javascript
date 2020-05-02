@@ -22,11 +22,12 @@ const turf = require('@turf/turf');
 
 
 function calculateDistance(longitude, latitude, longitude2, latitude2) {
-  const point1 = turf.point([longitude, latitude]);
-  const point2 = turf.point([longitude2, latitude2]);
+const point1 = turf.point([longitude, latitude]);
+const point2 = turf.point([longitude2, latitude2]);
 
-  return turf.distance(point1, point2);
+return turf.distance(point1, point2);
 }
+
 
 /**
  * 
@@ -64,7 +65,7 @@ function getCloseBeachTo(lines, longitude, latitude) {
     const lineLongitude = coordinates[1];
     const lineLatitude = coordinates[0];
 
-    const distance = calculateDistance(longitude, latitude, lineLongitude, lineLatitude)
+    const distance = calculoDistancia.calculateDistance(longitude, latitude, lineLongitude, lineLatitude)
 
     if (distance < minDistance) {
       minDistance = distance;
