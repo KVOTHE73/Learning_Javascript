@@ -1,0 +1,140 @@
+@import 'normalize.css';
+
+@font-face {
+    font-family: 'Baloo2-SemiBold';
+    src: url('/fonts/Baloo2-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baloo2-Regular';
+    src: url('/fonts/Baloo2-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('/fonts/Roboto-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+}
+
+#title {
+    height: 33vh;
+    border: 1px solid black; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url('/images/header-image.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Baloo2-SemiBold', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+#container1 {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+    margin-right: 2px;
+}
+
+.hotel-info {
+    border: 1px solid white;
+    padding: 10px;
+} 
+
+.hotel-image {
+    text-align: center;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.hotel-image:active {
+    transform: scale(2.5);
+}
+
+.button {
+    cursor:pointer;
+    position:relative;
+    padding:5px 5px;
+    background:white;
+    font-size:18px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    animation: background-color, 2s ease-in-out;
+}
+
+.button:hover {
+    border-top-right-radius:0px;
+    border-bottom-left-radius:0px;
+    background-color: rgba(0,0,0,.5);
+    color:white;
+}
+
+.hotel-info h1 {
+    color: white;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Roboto-Black', Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: 35px;
+    margin-top: 0px;
+}
+
+h3 {
+    font-family: 'Baloo2-SemiBold', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Baloo2-Regular', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+footer {
+    
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+
+@media screen and ( max-width: 600px){
+   
+    #title {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        background-image: url('/images/hotel-skyline.jpg');
+        background-size: initial;
+        background-position: center;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    section {
+        padding: 50px;
+    } 
+
+    .hotel-info {
+        padding: 25px;
+    }
+    
+} 
+    

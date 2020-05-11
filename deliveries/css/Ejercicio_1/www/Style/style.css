@@ -1,0 +1,126 @@
+@import 'normalize.css';
+
+body {
+    font-family: Arial, Helvetica, sans-serif;/*buscamos la fuente, en este caso la misma para todo el documento*/
+}
+
+main { /*es el dibujo entero, el body seria lo blanco y el main 
+    el rectangulo. Con un editor de imagenes podemos medir los 
+    pixels de cada elemento.*/
+    width: 600px; /*resulta de medir el ancho de la imagen*/
+    border: 1px solid silver; /*porque tiene un borde gris todo alrededor*/
+    margin: 10px auto; /*porque esta centrado y tiene un poquito de margen arriba y abajo*/
+    margin-bottom: 10px;/*margen inferior*/
+}
+
+header {
+    background-color: #76BCDA;/*buscamos codigo del el color de la imagen en internet*/
+    height: 300px;/*se mide la imagen*/
+    text-align: center;/*centramos la imagen*/
+        
+}
+
+header img {
+    animation: fade 0.5s ease-in-out 0.2s;
+}
+
+section > h1 {
+    color: #34495E; /*buscamos el color del primer Lorem, el mas grande*/
+    font-weight: bold; /*Usamos negrita*/
+    padding-left: 30px;/*le damos margen izquierdo*/
+    font-size: 25px;/*buscamos el tamaño de la fuente*/
+}
+
+section > h2 {
+    color:#34495E; /*ponemos el color de la fuente de nuevo*/
+    padding-left: 30px;/*le damos margen derecho e izquierdo*/
+    padding-right: 30px;
+    font-weight: bold;/*ponemos en negrita*/
+    font-size: 13px;/*buscamos el tamaño de la fuente*/
+    text-align: left;/*la alineacion a la izquierda*/
+}
+
+.imagen2 {
+    padding-left: 30px;/*ajustamos la imagen dos*/
+    width: 40%;/*decimos que ocupara el 40% del espacio*/
+    height: 125px;/*ajustamos el tamaño*/
+    transition: transform 0.2s ease-in-out;/*hacemos que tarde 0.2 la transformacion en el hover*/
+    cursor: pointer;/*el puntero se convierte en una mano*/
+}
+
+.imagen2:hover { /*hover es cuando pasamos el raton por encima*/
+    transform: scale(1.2);/*hacemos que se agrande la imagen*/
+    opacity: 0.5;/*hacemos que se ponga transparente*/
+}
+
+.imagen3 {
+    padding-left: 50px;/*ajustamos la imagen tres*/
+    width: 40%;/*decimos que ocupara el 40% del espacio*/
+    height: 125px;/*ajustamos el tamaño*/
+    transition: transform 0.2s ease-in-out;/*hacemos que tarde 0.2 la transformacion en el hover*/
+    cursor: pointer;/*el puntero se convierte en una mano*/
+    
+}
+
+.imagen3:hover {/*hover es cuando pasamos el raton por encima*/
+    transform: scale(1.2);/*hacemos que se agrande la imagen*/
+    opacity: 0.5;/*hacemos que se ponga transparente*/
+}
+
+section p {
+    color:#34495E;/*alineamos los dos ultimos Lorem*/
+    display: inline-block;/*para ponerlos uno al lado del otro*/
+    width: 40%;/*decimos que ocupara el 40% del espacio*/
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 17px;/*ajustamos el tamaño de la fuente y la alineacion*/
+    text-align: left;
+}
+
+footer {
+    color: white; /*el color del texto*/
+    background-color: #F6424C;/*buscamos el color del fondo*/
+    padding: 10px; /*el texto no toca las esquinas asi que hay un padding*/
+    transition: background-color .2s ease-in-out;
+}
+
+footer > div {
+    display: inline-block;/* aqui le decimos que los div van en la misma linea para que no nos ponga los links de fb y twitter debajo*/
+    padding: 12px;/*separamos el texto de los bordes*/
+}
+
+.social-links {
+    padding: 20px; /*colocamos en su sitio las imagenes de twitter y fb*/
+    text-align: right;/*las alineamos a la derecha*/
+    margin-left: 155px;/*ajustamos el margen*/
+    cursor: pointer;/*ponemos el cursor de la mano al pasar por encima de los links*/
+    padding: 12px;/*separamos los links para que no toquen los bordes*/
+    display: inline-block;/*las dos imagenes en la misma linea*/
+    background-size: contain;/*para que se vea la imagen entera*/
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+    
+} 
+
+a.twitter {
+    margin-right: 10px; /*separamos las dos imagenes entre ellas*/
+    
+}
+
+.social-links a:hover {
+    opacity: 0.5;/*hacemos que se ponga transparente*/
+}
+
+@keyframes fade {/*creamos un efecto para que la imagen del logo se desvanezca cada vez que entramos o recargamos la pagina*/
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+

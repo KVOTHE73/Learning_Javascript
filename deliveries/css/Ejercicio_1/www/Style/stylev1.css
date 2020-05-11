@@ -1,0 +1,78 @@
+@import 'normalize.css';
+    
+body {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.imagen1 {
+    padding: 10px;
+    float:center;
+     
+}
+
+h1 {
+    color: #34495E;
+    font-weight: bold;
+    padding-left: 58px;
+    font-size: 50px;
+}
+
+.Lorem {
+    color:#34495E;
+    padding-left: 60px;
+    font-weight: bold;
+    font-size: 33px;
+    text-align: left;
+}
+
+.Lorem1 {
+    color:#34495E;
+    padding-left: 60px;
+    font-weight: bold;
+    font-size: 33px;
+    text-align: left;
+}
+
+.Lorem2 {
+    color:#34495E;
+    padding-left: 45px;
+    font-weight: bold;
+    font-size: 33px;
+    text-align: left;
+}
+.imagen2 {
+    padding: 10px;
+    float:center;
+    margin: 45px;
+    
+}
+
+.imagen3 {
+    padding-right: 10px;
+    float: center;
+    margin: 50px;
+    
+}
+
+footer {
+    background-color: rgb(202, 83, 83);
+    margin: 20px;
+    float: center;
+    margin-right: 625px;
+    
+}
+
+h3 {
+    color: white;
+    padding-left: 40px;
+}
+
+.twitter {
+    padding-left: 675px;
+    float: center;
+    margin: 25px;
+    
+}

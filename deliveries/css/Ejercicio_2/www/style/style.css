@@ -1,0 +1,210 @@
+@import 'normalize.css';
+
+@font-face {
+    font-family: 'AmaticSC-Bold';
+    src: url('/fonts/AmaticSC-Bold.woff') format('woff2'), url('/fonts/AmaticSC-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TrebuchetMS';
+    src: url('/fonts/TrebuchetMS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#description {
+    padding: 50px;
+    border-bottom: 1px solid #eee;
+    background-image: url('/images/mountain1.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background: cover;
+    
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 67px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'AmaticSC-Bold', 'Courier New', Courier, monospace; 
+    color: #3279fc;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: snow;
+}
+
+header ul, section ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    max-width: 960px;
+    margin: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: silver;
+    padding: 10px;
+    display: block;
+}
+
+nav h2 {
+    margin: 0;
+}
+section {
+    padding: 50px;
+}
+
+p {
+    font-family: 'AmaticSC-Bold', 'Courier New', Courier, monospace;
+}
+
+#intro {
+    height: 30vh;
+    min-height: 200px;
+    max-height: 360px;
+    border: 1px solid #3279fc; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url('/images/header-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#intro::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#intro h1 span {
+    display: block;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+}
+
+#intro h1 strong {
+    font-size: 1.6em;
+    display: block;
+}
+
+#intro h1 {
+    position: relative;
+    animation: fadeEnter 0.5s ease-in-out 0.2s forwards;
+    opacity: 0;
+}
+
+#description {
+    border-bottom: 1px solid #eee;
+    background-image: url('/images/mountain1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+
+#description p {
+    max-width: 960px;
+    margin: 2em auto;
+    line-height: 2.0;
+    font-size: 1.3em;
+}
+
+#description h4 {
+    font-size: 1.3em;
+}
+
+#activities .activities-list {
+    display: flex;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.activity {
+    background-color: #3279fc;
+    color: white;
+    padding: 20px;
+    height: 80px;
+    margin: 5px;
+    flex-grow: 1;
+    flex-basis: 16.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+.activity:hover {
+    background-color: #12429c;
+}
+
+.activity h3 {
+    color: white;  
+}
+
+#colophon {
+    padding: 10px;
+    background-color: #3279fc;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding-top: 200px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center; 
+    }
+    .logo {
+        order: -1;
+    }
+    #activities .activities-list {
+        flex-direction: column;
+        width: 100%;
+    }
+    section {
+        padding: 20px;
+    }
+    nav li {
+        font-size: small;
+    }
+}
+
+@keyframes fadeEnter {
+    from {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
